@@ -1,0 +1,16 @@
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\MyMoodNote.DataAccessLayer.dll.config
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\MyMoodNote.DataAccessLayer.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\MyMoodNote.DataAccessLayer.pdb
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\FakeData.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\MyMoodNote.Entities.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\MyMoodNote.Entities.pdb
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\bin\Debug\FakeData.pdb
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\obj\Debug\MyMoodNote.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\obj\Debug\MyMoodNote.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\obj\Debug\MyMoodNote.DataAccessLayer.csproj.CopyComplete
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\obj\Debug\MyMoodNote.DataAccessLayer.dll
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyEverNote.WebMVCSolutions\MyMoodNote.DataAccessLayer\obj\Debug\MyMoodNote.DataAccessLayer.pdb
