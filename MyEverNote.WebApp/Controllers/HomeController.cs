@@ -11,8 +11,9 @@ namespace MyEverNote.WebApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            MyMoodNote.BusinessLayer.Test test = new MyMoodNote.BusinessLayer.Test(); 
             return View();
+
+
         }
     }
 }

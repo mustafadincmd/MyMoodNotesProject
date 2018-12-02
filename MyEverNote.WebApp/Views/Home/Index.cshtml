@@ -10,12 +10,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <p class="lead">Kategoriler</p>
-            <div class="list-group">
-                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>Günlük</a>
-                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>Aylık</a>
-                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>Yıllık</a>
-            </div>
+
+            @Html.Partial("_PartialCategories")
+
+
         </div>
         <div class="col-md-9">
             <div class="row carousel-holder">
