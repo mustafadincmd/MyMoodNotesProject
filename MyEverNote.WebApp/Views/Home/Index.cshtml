@@ -1,4 +1,6 @@
-﻿
+﻿@using MyMoodNote.Entities
+@model List<Note>
+
 @{
     ViewBag.Title = "Index";
 
@@ -44,217 +46,64 @@
                     </div>
                 </div>
             </div>
+
+            <!--Notlar -->
             <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
+                @foreach (Note note in Model)
+                {
 
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
 
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="@note.Title">
+                            <div class="caption">
+                                <h4>
+                                    <a href="#">
+                                        @note.Title
+                                    </a>
+                                </h4>
 
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
+                                @if (string.IsNullOrEmpty(note.Text) == false && note.Text.Length > 60)
+                                {
+                                <p>
+                                    @(note.Text.Substring(0, 60) + "...")
+                                </p>
 
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
+                                    <p class="pull-right"> 
+                                        <a href="#" class="btn btn-default btn-sm">Devamı...<span class="glyphicon glyphicon-chevron-right"></span>
+                             </a>
+                                    </p>
+
+
+                                    }
+                                    else
+                                    {
+                                    @note.Text
+                                    }
+
+                                    <h6>
+                                        <span class="glyphicon glyphicon-time"></span> @note.ModifiedOn.ToString("dd.MM.yy " +
+                                                                    " HH:mm")<br />
+
+                                        <span class="glyphicon glyphicon-user"></span> @note.Owner.UserName<br />
+
+                                    </h6>
+                                </div>
+                            <div class="ratings">
+                                <p class="pull-right">
+                                    <button class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-comment"></span>Yorumlar
+                                    </button>
+                                </p>
+                                <p>
+                                    <button type="button" class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-star-empty"></span>@note.LikeCount
+                                    </button>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
-
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
-
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
-
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
-
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
-
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
-
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
-
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
-
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">Önem Derecesi</h4>
-                            <h4>
-                                <a href="#">1.Notum</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time"></span> 01.01.2019<br />
-
-                                <span class="glyphicon glyphicon-user"></span> Mustafa Dinç<br />
-
-                            </h6>
-                            <p> Örnek cümle Örnek note</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">
-                                <button class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-comment"></span>Yorumlar
-                                </button>
-                            </p>
-                            <p>
-                                <button type="button" class="btn btn-default btn-sm">
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>
