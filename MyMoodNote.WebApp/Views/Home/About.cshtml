@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+
+@using MyMoodNote.Entities
+@model List<Note>
+
+@{
+    ViewBag.Title = "Index";
+
+    // Layout = null;
+    // sayfayı layoutsuz biçimde getirir.
+
+}
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+            @Html.Partial("_PartialCategories")
+
+
+        </div>
+        <div class="col-md-9">
+            <div class="col-md-9">
+                <h2>
+                    Hakkımızda 
+                </h2>
+                <p>
+                    Biz Kimiz ? 
+                </p>
+            </div>
+     
+        </div>
+    </div>
+</div>
+<!-- /.container -->
