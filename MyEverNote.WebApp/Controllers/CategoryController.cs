@@ -7,7 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MyEverNote.WebApp.Controllers
+namespace MyMoodNote.WebApp.Controllers
 {
     public class CategoryController : Controller
     {
