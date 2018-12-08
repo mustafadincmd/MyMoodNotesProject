@@ -1,10 +1,10 @@
-﻿@using MyMoodNote.WebApp.ViewsModels
+﻿@using MyMoodNote..Entities.ValueObjects
 @model LoginViewModel
 
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "MyMoodNote Giriş Sayfası";
+    ViewBag.Title = "MyMoodNote Giriş Sayfası";
 }
 
 
@@ -50,7 +50,7 @@
 <script>
     $(function () {
 
-        $("footer").parents.hide();
+        $("footer").parent().hide();
     });
 
 
