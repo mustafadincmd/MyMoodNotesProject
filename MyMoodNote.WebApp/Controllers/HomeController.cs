@@ -1,6 +1,6 @@
 ﻿using MyMoodNote.BusinessLayer;
 using MyMoodNote.Entities;
-using MyMoodNote.WebApp.ViewsModels;
+using MyMoodNote.Entities.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -80,19 +80,78 @@ namespace MyMoodNote.WebApp.Controllers
         public ActionResult Register(RegisterViewModel model)
 
         {
-            if (ModelState.IsValid) // model geçerli mi değil mi ? 
-            {
 
+            if (ModelState.IsValid)
+            {
+                MyMoodNoteUserManager num = new MyMoodNoteUserManager();
+                BusinessLayerResult<NoteUser> res = num.RegisterUser(model);
+
+                if (res.Errors.Count>0)
+                {
+                    res.Errors.ForEach(x => ModelState.AddModelError("", x));
+                    return View(model);
+
+                }
+
+
+
+                //NoteUser user = null;
+
+                //try
+                //{
+                //    num.RegisterUser(model);
+
+                //}
+                //catch (Exception ex)
+                //{
+                //    ModelState.AddModelError("", ex.Message);
+
+                //}
+
+
+                // model geçerli mi değil mi ? 
+
+                /*  bool hasError = false;
+
+                  {
+                      if (model.Username == "aaa")
+                      {
+
+                          ModelState.AddModelError("", "Kullanıcı adı kullanılıyor.");
+                          hasError = true;
+
+                      }
+
+                      if (model.Email== "aaa@aa.com")
+                      {
+
+                          ModelState.AddModelError("", "Eposta adresi kullanılıyor.");
+                          hasError = true;
+
+                      }
+                      if (hasError)
+
+                  }*/
+                //if (User == null)
+                //{
+                //    return View(model);
+
+                ////}
+                return RedirectToAction("RegisterOk");
 
             }
-            //Kullanıcı Username kontrolü..
-            //Kullanıcı eposta kontrolü.. 
-            //kayıt işlemi 
-            //aktivasyon epostası gönderimi 
+            return View(model);
+
+        }
+
+
+
+        public ActionResult Register()
+        {
             return View();
         }
 
-        public ActionResult Register()
+        public ActionResult RegisterOk()
         {
             return View();
         }

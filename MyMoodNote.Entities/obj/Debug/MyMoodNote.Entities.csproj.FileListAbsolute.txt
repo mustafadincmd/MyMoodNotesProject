@@ -8,3 +8,4 @@ C:\Users\W8\Documents\Visual Studio 2017\Projects\MyMoodNote.WebMVCSolutions\MyM
 C:\Users\W8\Documents\Visual Studio 2017\Projects\MyMoodNote.WebMVCSolutions\MyMoodNote.Entities\obj\Debug\MyMoodNote.Entities.csproj.CoreCompileInputs.cache
 C:\Users\W8\Documents\Visual Studio 2017\Projects\MyMoodNote.WebMVCSolutions\MyMoodNote.Entities\obj\Debug\MyMoodNote.Entities.dll
 C:\Users\W8\Documents\Visual Studio 2017\Projects\MyMoodNote.WebMVCSolutions\MyMoodNote.Entities\obj\Debug\MyMoodNote.Entities.pdb
+C:\Users\W8\Documents\Visual Studio 2017\Projects\MyMoodNote.WebMVCSolutions\MyMoodNote.Entities\obj\Debug\MyMoodNote.Entities.csprojAssemblyReference.cache
