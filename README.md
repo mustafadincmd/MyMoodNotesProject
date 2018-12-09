@@ -1,6 +1,1 @@
-# mymoodnote
-# mymoodnote
-"# mymoodnote" 
-"# mymoodnote" 
-
-.
+this project my code
